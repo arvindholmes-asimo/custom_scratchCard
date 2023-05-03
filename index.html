@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            background: #4da1da;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            height: 500px;
+            position: relative;
+            background: #f4f4f4;
+        }
+
+        #baseCard,
+        #scratch {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid black;
+            cursor: grab;
+            border-radius: 0.6rem;
+        }
+        #baseCard{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: serif;
+            flex-direction: column;
+            font-weight: bold;
+        }
+        #scratch{
+            border: 1px solid black;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="baseCard">
+            <p>You won</p>
+            <p>1000rs</p>
+        </div>
+        <canvas id="scratch"  width="200" height="200"></canvas>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
