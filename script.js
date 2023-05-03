@@ -65,7 +65,7 @@ const scratch = (x, y) => {
 function scratchedArea(x,y){
     let scratchArea = x * y;
     scrapedPixels = scratchArea / pixels * 100;
-    if(scrapedPixels > 50){
+    if(scrapedPixels > 40){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
     console.log("scrapedPixels:",scrapedPixels);
